@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply text-white;
+}
+
+::selection {
+  @apply bg-purple-700 text-white;
+}
+
+html,
+body {
+  @apply bg-black;
+}
+
+.wrapper {
+  @apply container md:mx-auto w-full px-8;
+}
+
+h1 {
+  @apply text-5xl md:text-[4rem] !important;
+  @apply font-bold tracking-tight;
+}
+h2 {
+  @apply text-[2rem] md:text-5xl !important;
+  @apply font-bold tracking-tight;
+}
+h3 {
+  @apply text-2xl md:text-[2rem] !important;
+  @apply font-bold tracking-tight;
+}
+small {
+  letter-spacing: 0.5rem;
+  @apply md:text-lg !important;
+  @apply text-neutral-200 md:text-neutral-300 uppercase block;
+
+}
